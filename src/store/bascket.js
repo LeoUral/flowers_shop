@@ -1,6 +1,5 @@
 import { makeAutoObservable, observable } from "mobx";
 
-
 class BascketStore {
 
     basket = observable({
@@ -12,18 +11,16 @@ class BascketStore {
         makeAutoObservable(this);
     }
 
-    incrementTotal() {
-        this.total = this.total + 1;
+    incrementTotal(numberData) {
+        this.total = this.total + numberData;
         console.log(this.total + 'increment');
     }
 
-    decrementTotla() {
-        this.total = this.total - 1;
+    decrementTotla(numberData) {
+        this.total = this.total - numberData;
         console.log(this.total + 'decrement');
     }
 
 }
-
-
 
 export default new BascketStore();
