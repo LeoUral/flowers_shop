@@ -1,11 +1,10 @@
-import { makeAutoObservable, observable } from "mobx";
+import { makeAutoObservable } from "mobx";
 
 class BascketStore {
 
-    basket = observable({
-        flowersId: [],
-        total: 0
-    });
+    flowersId = [];
+    total = 0;
+
 
     constructor() {
         makeAutoObservable(this);
