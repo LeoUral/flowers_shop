@@ -28,3 +28,18 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+
+.blockItem__button_buy {
+  margin: 10px auto;
+  width: 120px;
+  height: 30px;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blockItem:hover .blockItem__button_buy {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}

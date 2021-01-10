@@ -15,4 +15,16 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    &__button_buy {
+        margin: 10px auto;
+        width: 120px;
+        height: 30px;
+        opacity: 0;
+        transition: 0.5s;
+    }
+}
+
+.blockItem:hover .blockItem__button_buy {
+    opacity: 1;
+    transition: 0.5s;
 }
