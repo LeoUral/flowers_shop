@@ -44,12 +44,10 @@ export default class Main extends React.Component {
 
         return (
             <>
-                <div>
-                    Main block
-                    <div>
-                        {this.renderBase}
-                    </div>
+                <div className="main">
+                    {this.renderBase}
                 </div>
+
             </>
         );
     }

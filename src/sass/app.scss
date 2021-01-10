@@ -1,0 +1,18 @@
+.main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.blockItem {
+    width: 150px;
+    height: 200px;
+    border: 1px solid #000;
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
