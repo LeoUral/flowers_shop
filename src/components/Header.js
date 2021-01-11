@@ -1,14 +1,20 @@
-import React from 'react';
 
-export default class Header extends React.Component {
+import React from 'react';
+import HeaderTotal from './headerTotal';
+
+
+class Header extends React.Component {
+
 
     render() {
         return (
             <>
-                <div>
+                <div className="header">
                     Header block
+                    <HeaderTotal />
                 </div>
             </>
         );
     }
 }
+export default Header;

@@ -1,3 +1,9 @@
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #ccc;
+}
+
 .main {
   width: 100%;
   display: -webkit-box;
@@ -13,10 +19,18 @@
 .blockItem {
   width: 150px;
   height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
   border: 1px solid #000;
   margin: 10px;
   text-align: center;
   padding: 10px;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,7 +47,40 @@
   margin: 10px auto;
   width: 120px;
   height: 30px;
+  background-color: red;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 3px 3px 5px #fa9191;
+          box-shadow: 3px 3px 5px #fa9191;
+  cursor: pointer;
   opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blockItem__name {
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 3px 3px 5px #000;
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blockItem__price {
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 3px 3px 5px #000;
+  opacity: 0.5;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blockItem:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -42,4 +89,21 @@
   opacity: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.blockItem:hover .blockItem__name {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blockItem:hover .blockItem__price {
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blockItem__button_buy:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }

@@ -22,6 +22,7 @@ export default class Main extends React.Component {
                     <BlockItem
                         name={dataItem.name}
                         price={dataItem.price}
+                        urlImg={dataItem.urlImg}
                     />
                 </React.Fragment>
             );
