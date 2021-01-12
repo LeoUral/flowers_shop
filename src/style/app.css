@@ -107,3 +107,80 @@
   -webkit-box-shadow: none;
           box-shadow: none;
 }
+
+.modal {
+  width: 100%;
+}
+
+.modal__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  z-index: 10;
+}
+
+.modal_window {
+  position: relative;
+  z-index: 11;
+  width: 300px;
+  background-color: #fff;
+  margin: 100px auto;
+}
+
+.modal_window h3 {
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+.modal_window p {
+  padding: 0 20px;
+}
+
+.btn-block {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-close,
+.btn-pay {
+  width: 70px;
+  height: 30px;
+  margin: 20px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-close {
+  background-color: #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-close:hover {
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-pay {
+  background-color: red;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn-pay:hover {
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
