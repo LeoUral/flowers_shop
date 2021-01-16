@@ -2,7 +2,7 @@ import { makeAutoObservable } from "mobx";
 
 class BascketStore {
 
-    flowersId = [];
+    flowersId = []; // последовательность ID купленных букетов
     total = 0;
 
 
@@ -18,6 +18,11 @@ class BascketStore {
     decrementTotla(numberData) {
         this.total = +this.total - +numberData;
         console.log(this.total, 'decrement');
+    }
+
+    getPurchasedFlowers(id) {
+        this.flowersId.push(id);
+        console.log(this.flowersId, 'arrFlowers');
     }
 
 }
