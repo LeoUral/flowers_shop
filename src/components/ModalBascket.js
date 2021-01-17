@@ -4,7 +4,10 @@ import React from 'react';
 class ModalBascket extends React.Component {
     constructor(props) {
         super(props);
-        this.state = { show: false };
+        this.state = {
+            show: false,
+            bascketData: []// наполнение покупками
+        };
         this.handleOpenModalWindow = this.handleOpenModalWindow.bind(this);
         this.handleCloseModalWindow = this.handleCloseModalWindow.bind(this);
     }
@@ -15,6 +18,10 @@ class ModalBascket extends React.Component {
     handleCloseModalWindow() {
         this.setState({ show: false });
     }
+
+    // Фукция подсчета продаж (сформировать из flowersId) путем подсчета ID
+
+    //Функция рендеринга. Сформировать view корзины и вывести в модальное окно
 
     render() {
 
