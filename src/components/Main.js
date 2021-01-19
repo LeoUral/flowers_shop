@@ -23,7 +23,8 @@ export default class Main extends React.Component {
                         name={dataItem.name}
                         price={dataItem.price}
                         urlImg={dataItem.urlImg}
-                        numberID={dataItem.id}
+                        id={dataItem.id}
+                        inc={dataItem.inc}
                     />
                 </React.Fragment>
             );
