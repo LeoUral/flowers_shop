@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { Fragment } from 'react';
+import Base from './Base';
+import ModalItem from './ModalItem';
+import BascketStore from '../store/bascket';
 
 
 class ModalBascket extends React.Component {
@@ -6,7 +9,7 @@ class ModalBascket extends React.Component {
         super(props);
         this.state = {
             show: false,
-            bascketData: []// наполнение покупками
+            base: []// наполнение покупками
         };
         this.handleOpenModalWindow = this.handleOpenModalWindow.bind(this);
         this.handleCloseModalWindow = this.handleCloseModalWindow.bind(this);
@@ -19,12 +22,50 @@ class ModalBascket extends React.Component {
         this.setState({ show: false });
     }
 
-    // Фукция подсчета продаж (сформировать из flowersId) путем подсчета ID
-    //сформировать еще один массив с количеством покупок
+    viewBacket(data, quantity, total) {
 
-    //Функция рендеринга. Сформировать view корзины и вывести в модальное окно
+        this.basketBlock = [];
+
+        for (let i = 0; i < data.length; i++) {
+            if (quantity[i] > 0) {
+                this.basketBlock.push(
+                    <React.Fragment key={data[i].id}>
+                        <ModalItem
+                            quantity={quantity[i]}
+                            name={data[i].name}
+                            price={data[i].price}
+                            urlImg={data[i].urlImg}
+                            id={data[i].id}
+                            numberID={data[i].id}
+                            inc={data[i].inc}
+                        />
+                    </React.Fragment>
+                )
+            }
+        }
+
+        this.basketBlock.push(
+            <React.Fragment key={data.length + 1}>
+                <div>
+                    <span>ИТОГО: </span> {total} <span> руб.</span>
+                </div>
+            </React.Fragment>
+        )
+        console.log(this.basketBlock);
+    }
+
+    componentDidMount() {
+        let promiseData = Base.getDataBase();
+        promiseData.then((data) => {
+            this.setState({
+                base: data
+            })
+        });
+    }
 
     render() {
+
+        this.viewBacket(this.state.base, BascketStore.quantity, BascketStore.total)
 
         return (
             <>
@@ -33,7 +74,7 @@ class ModalBascket extends React.Component {
                     <div className="modal__shadow" onClick={this.handleCloseModalWindow}></div>
                     <div className="modal_window">
                         <h3>Ваши покупки:</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus ut cupiditate possimus officiis assumenda suscipit rerum eum, nisi nulla magni repellat laborum quisquam dolorum ipsum voluptas inventore vero accusamus ratione minima distinctio. Voluptatum ullam est neque, modi numquam ut. Distinctio velit eveniet, aut ipsum quibusdam eos obcaecati eaque impedit iusto?</p>
+                        {this.basketBlock}
                         <div className="btn-block">
                             <button className="btn-close" onClick={this.handleCloseModalWindow}>Close</button>
                             <button className="btn-pay">To pay</button>

@@ -2,9 +2,9 @@ import { makeAutoObservable } from "mobx";
 
 class BascketStore {
 
-    flowersId = []; // последовательность ID купленных букетов
+    lengthArray = 6; //длинна массива БАЗЫ
+    quantity = new Array(this.lengthArray); // массив купленных букетов, количество по ID
     total = 0;
-
 
     constructor() {
         makeAutoObservable(this);
@@ -20,11 +20,16 @@ class BascketStore {
         console.log(this.total, 'decrement');
     }
 
+    //Заносим в массив количество покупок
     getPurchasedFlowers(id) {
-        this.flowersId.push(id);
-        console.log(this.flowersId, 'arrFlowers');
-    }
+        if (this.quantity[id] === null || this.quantity[id] === undefined) {
+            this.quantity[id] = 1;
+        } else {
+            this.quantity[id] = this.quantity[id] + 1;
+        }
 
+        console.log(this.quantity, 'arrFlowers');
+    }
 }
 
 export default new BascketStore();

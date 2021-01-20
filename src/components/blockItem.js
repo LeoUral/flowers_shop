@@ -6,27 +6,12 @@ export default class BlockItem extends React.Component {
 
     handleIncrement(event) {
         const price = event.target.dataset.price;
-        const data = {};
-        data.price = event.target.dataset.price;
-        data.id = event.target.dataset.id;
-        data.name = event.target.dataset.name;
-        data.url = event.target.dataset.url;
-        data.inc = event.target.dataset.inc;
+        const id = event.target.dataset.id;
 
         BascketStore.incrementTotal(price);
-        BascketStore.getPurchasedFlowers(data);
+        BascketStore.getPurchasedFlowers(id);
     }
 
-    getNumberFlowers(e) {
-        const data = {};
-        data.price = e.target.dataset.price;
-        data.id = e.target.dataset.id;
-        data.name = e.target.dataset.name;
-        data.url = e.target.dataset.url;
-        data.inc = e.target.dataset.inc;
-
-
-    }
 
     render() {
 
