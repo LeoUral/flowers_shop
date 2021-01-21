@@ -22,6 +22,8 @@ class ModalBascket extends React.Component {
         this.setState({ show: false });
     }
 
+    //TODO вынести отдельным функциональным компонентом с observer -ом
+    //TODO для перерисовки корзины
     viewBacket(data, quantity, total) {
 
         this.basketBlock = [];

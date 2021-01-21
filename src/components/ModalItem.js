@@ -1,4 +1,5 @@
 import React from 'react';
+import BascketStore from '../store/bascket';
 
 // блок формированиея покупки
 export default class ModalItem extends React.Component {
@@ -6,13 +7,13 @@ export default class ModalItem extends React.Component {
     handleIncrement(event) {
         const price = event.target.dataset.price;
         const numberID = event.target.dataset.number;
-        console.log(event.target);
+        BascketStore.incrementTotal(price);
         console.log(price + " " + numberID);
     }
     handleDecrement(event) {
         const price = event.target.dataset.price;
         const numberID = event.target.dataset.number;
-        console.log(event.target);
+        BascketStore.decrementTotla(price);
         console.log(price + " " + numberID);
     }
 
