@@ -8,12 +8,14 @@ export default class ModalItem extends React.Component {
         const price = event.target.dataset.price;
         const numberID = event.target.dataset.number;
         BascketStore.incrementTotal(price);
+        BascketStore.getPurchasedFlowers(numberID);
         console.log(price + " " + numberID);
     }
     handleDecrement(event) {
         const price = event.target.dataset.price;
         const numberID = event.target.dataset.number;
         BascketStore.decrementTotla(price);
+        BascketStore.removePurchasedFlowers(numberID);
         console.log(price + " " + numberID);
     }
 
@@ -28,7 +30,7 @@ export default class ModalItem extends React.Component {
                         <div className="modalItem__price">За шт.: {this.props.price}<span> руб.</span> </div>
                         <div className="modalItem__total">Сумма: {this.props.quantity * this.props.price}<span> руб.</span> </div>
                         <button
-                            className="modalItem__button_increment"
+                            className="modalItem__button btn_increment"
                             data-number={this.props.numberID}
                             data-price={this.props.price}
                             onClick={this.handleIncrement}
@@ -36,7 +38,7 @@ export default class ModalItem extends React.Component {
                             +
                     </button>
                         <button
-                            className="modalItem__button_decrement"
+                            className="modalItem__button btn_decrement"
                             data-number={this.props.numberID}
                             data-price={this.props.price}
                             onClick={this.handleDecrement}

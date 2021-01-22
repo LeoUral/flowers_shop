@@ -5,6 +5,7 @@ class BascketStore {
     lengthArray = 6; //длинна массива БАЗЫ
     quantity = new Array(this.lengthArray); // массив купленных букетов, количество по ID
     total = 0;
+    base = []; //база букетов
 
     constructor() {
         makeAutoObservable(this);
@@ -19,6 +20,9 @@ class BascketStore {
         this.total = +this.total - +numberData;
         console.log(this.total, 'decrement');
     }
+    rewriteBase(data) {
+        this.base = data;
+    }
 
     //Заносим в массив количество покупок
     getPurchasedFlowers(id) {
@@ -27,8 +31,14 @@ class BascketStore {
         } else {
             this.quantity[id] = this.quantity[id] + 1;
         }
-
         console.log(this.quantity, 'arrFlowers');
+    }
+
+    //убираем покупки
+    removePurchasedFlowers(id) {
+        if (this.quantity[id] > 0) {
+            this.quantity[id] = this.quantity[id] - 1;
+        }
     }
 }
 

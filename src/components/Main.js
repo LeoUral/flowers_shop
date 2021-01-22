@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 import Base from './Base';
 import BlockItem from './blockItem';
+import BascketStore from '../store/bascket';
 
 export default class Main extends React.Component {
     constructor(props) {
@@ -38,6 +39,7 @@ export default class Main extends React.Component {
             this.setState({
                 base: data
             })
+            BascketStore.rewriteBase(data);
         });
     }
 

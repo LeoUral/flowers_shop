@@ -210,3 +210,27 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+.modalItem__button {
+  margin: 10px 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  color: #fff;
+  font-size: 36px;
+  background-color: #4a57a1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modalItem__button:hover {
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
