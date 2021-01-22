@@ -7,16 +7,17 @@ export default class ModalItem extends React.Component {
     handleIncrement(event) {
         const price = event.target.dataset.price;
         const numberID = event.target.dataset.number;
+
         BascketStore.incrementTotal(price);
         BascketStore.getPurchasedFlowers(numberID);
-        console.log(price + " " + numberID);
     }
+
     handleDecrement(event) {
         const price = event.target.dataset.price;
         const numberID = event.target.dataset.number;
+
         BascketStore.decrementTotla(price);
         BascketStore.removePurchasedFlowers(numberID);
-        console.log(price + " " + numberID);
     }
 
     render() {

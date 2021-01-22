@@ -39,7 +39,7 @@ export default class Main extends React.Component {
             this.setState({
                 base: data
             })
-            BascketStore.rewriteBase(data);
+            BascketStore.writeBase(data);
         });
     }
 

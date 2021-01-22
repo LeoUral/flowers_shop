@@ -222,7 +222,7 @@
   border-radius: 50%;
   outline: none;
   color: #fff;
-  font-size: 36px;
+  font-size: 42px;
   background-color: #4a57a1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -233,4 +233,10 @@
           box-shadow: 3px 3px 5px #000;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.modalItem__button:active {
+  color: red;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }

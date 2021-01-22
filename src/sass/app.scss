@@ -181,7 +181,7 @@
     border-radius: 50%;
     outline: none;
     color: #fff;
-    font-size: 36px;
+    font-size: 42px;
     background-color: rgb(74, 87, 161);
     transition: 0.5s;
 }
@@ -189,4 +189,9 @@
 .modalItem__button:hover {
     box-shadow: 3px 3px 5px #000;
     transition: 0.5s;
+}
+
+.modalItem__button:active {
+    color: red;
+    box-shadow: none;
 }

@@ -1,5 +1,4 @@
 import React, { Fragment } from 'react';
-// import Base from './Base';
 import ViewBacket from './viewBascket';
 import BascketStore from '../store/bascket';
 
@@ -21,10 +20,6 @@ class ModalBascket extends React.Component {
     handleCloseModalWindow() {
         this.setState({ show: false });
     }
-
-    //TODO вынести отдельным функциональным компонентом с observer -ом
-    //TODO для перерисовки корзины
-
 
     componentDidMount() {
 

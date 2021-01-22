@@ -13,14 +13,12 @@ class BascketStore {
 
     incrementTotal(numberData) {
         this.total = +this.total + +numberData;
-        console.log(this.total, 'increment');
     }
 
     decrementTotla(numberData) {
         this.total = +this.total - +numberData;
-        console.log(this.total, 'decrement');
     }
-    rewriteBase(data) {
+    writeBase(data) {
         this.base = data;
     }
 

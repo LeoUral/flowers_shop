@@ -33,7 +33,7 @@ const ViewBacket = observer(() => {
     basketBlock.push(
         <React.Fragment key={data.length + 1}>
             <div>
-                <span>ИТОГО: </span> {total} <span> руб.</span>
+                <span> ИТОГО: </span> {total} <span> руб.</span>
             </div>
         </React.Fragment>
     )
