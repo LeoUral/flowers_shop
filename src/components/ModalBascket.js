@@ -6,10 +6,12 @@ import BascketStore from '../store/bascket';
 class ModalBascket extends React.Component {
     constructor(props) {
         super(props);
+
         this.state = {
             show: false,
             base: []// наполнение покупками
         };
+
         this.handleOpenModalWindow = this.handleOpenModalWindow.bind(this);
         this.handleCloseModalWindow = this.handleCloseModalWindow.bind(this);
     }
@@ -17,6 +19,7 @@ class ModalBascket extends React.Component {
     handleOpenModalWindow() {
         this.setState({ show: true });
     }
+
     handleCloseModalWindow() {
         this.setState({ show: false });
     }
@@ -33,7 +36,7 @@ class ModalBascket extends React.Component {
 
         return (
             <>
-                <button onClick={this.handleOpenModalWindow}>Ваши покупки</button>
+                <button onClick={this.handleOpenModalWindow} className="mobal__button_top" >Ваши покупки</button>
                 <div className="modal" style={{ display: this.state.show ? 'block' : 'none' }}>
                     <div className="modal__shadow" onClick={this.handleCloseModalWindow}></div>
                     <div className="modal_window">

@@ -12,8 +12,8 @@ export default class Main extends React.Component {
         }
     }
 
+    //формируем каталог товара
     writeBlockProduct() {
-
         const data = this.state.base;
         this.renderBase = [];
 
@@ -33,14 +33,23 @@ export default class Main extends React.Component {
         console.log(this.renderBase);
     }
 
-    componentDidMount() {
+    //получаем загруженную базу
+    getPromiseDataBase() {
         let promiseData = Base.getDataBase();
         promiseData.then((data) => {
             this.setState({
                 base: data
             })
             BascketStore.writeBase(data);
-        });
+        })
+            .catch((error) => {
+                console.log(error + ' <= ERROR данные не получены!');
+            });
+    }
+
+    componentDidMount() {
+
+        this.getPromiseDataBase();
     }
 
     render() {

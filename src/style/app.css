@@ -108,6 +108,41 @@
           box-shadow: none;
 }
 
+.header_total {
+  padding: 0 10px;
+  font-size: 20px;
+}
+
+.mobal__button_top {
+  width: 150px;
+  height: 40px;
+  margin: 5px 10px;
+  border: none;
+  background-color: cadetblue;
+  border-radius: 15px;
+  font-size: 18px;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+}
+
+.mobal__button_top:hover {
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.mobal__button_top:active {
+  color: #910505;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .modal {
   width: 100%;
 }

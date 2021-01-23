@@ -80,6 +80,36 @@
     box-shadow: none;
 }
 
+.header_total {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+.mobal__button_top {
+    width: 150px;
+    height: 40px;
+    margin: 5px 10px;
+    border: none;
+    background-color: cadetblue;
+    border-radius: 15px;
+    font-size: 18px;
+    color: #fff;
+    transition: 0.5s;
+    box-sizing: border-box;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobal__button_top:hover {
+    box-shadow: 3px 3px 5px #000;
+    transition: 0.5s;
+}
+
+.mobal__button_top:active {
+    color: rgb(145, 5, 5);
+    box-shadow: none;
+}
+
 .modal {
     width: 100%;
 }
