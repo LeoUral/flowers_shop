@@ -18,6 +18,7 @@ class BascketStore {
     decrementTotla(numberData) {
         this.total = +this.total - +numberData;
     }
+
     writeBase(data) {
         this.base = data;
     }

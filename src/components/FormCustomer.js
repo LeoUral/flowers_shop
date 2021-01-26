@@ -14,6 +14,7 @@ export default class FormCustomer extends React.Component {
                         You Phone
                     <input type="phone" />
                     </label>
+                    <input type="submit" placeholder=" send " />
                 </form>
             </>
         );
