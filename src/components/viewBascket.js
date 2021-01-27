@@ -37,7 +37,7 @@ const ViewBacket = observer(() => {
             </div>
         </React.Fragment>
     )
-    console.log(basketBlock);
+    console.log(basketBlock);//test -> arr bascket
     return (
         <>
             <div>

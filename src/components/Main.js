@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Base from './Base';
 import BlockItem from './blockItem';
 import BascketStore from '../store/bascket';
@@ -44,7 +44,7 @@ export default class Main extends React.Component {
             BascketStore.writeBase(data);
         })
             .catch((error) => {
-                console.log(error + ' <= ERROR данные не получены!');
+                console.log(error + ' <= ERROR данные не получены!');//test -> err base
             });
     }
 
@@ -59,10 +59,11 @@ export default class Main extends React.Component {
 
         return (
             <>
+                <FormCustomer />
                 <div className="main">
                     {this.renderBase}
                 </div>
-                <FormCustomer />
+
 
             </>
         );

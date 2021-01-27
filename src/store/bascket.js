@@ -4,7 +4,7 @@ class BascketStore {
 
     lengthArray = 6; //длинна массива БАЗЫ
     quantity = new Array(this.lengthArray); // массив купленных букетов, количество по ID
-    total = 0;
+    total = 0; //итоговая стоимость покупок
     base = []; //база букетов
 
     constructor() {
@@ -12,11 +12,11 @@ class BascketStore {
     }
 
     incrementTotal(numberData) {
-        this.total = +this.total + +numberData;
+        this.total = (+this.total) + (+numberData);
     }
 
     decrementTotla(numberData) {
-        this.total = +this.total - +numberData;
+        this.total = (+this.total) - (+numberData);
     }
 
     writeBase(data) {
@@ -30,7 +30,7 @@ class BascketStore {
         } else {
             this.quantity[id] = this.quantity[id] + 1;
         }
-        console.log(this.quantity, 'arrFlowers');
+        console.log(this.quantity, 'arrFlowers');//test -> change quantity
     }
 
     //убираем покупки
