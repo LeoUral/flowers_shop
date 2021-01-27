@@ -39,5 +39,47 @@
         "urlImg": "image_3.jpg",
         "price": 5200,
         "inc": ["роза", "гербера", "пион"]
+    },
+    {
+        "id": 6,
+        "name": "BUKET I",
+        "urlImg": "image_3.jpg",
+        "price": 1456,
+        "inc": ["роза", "тюльпан"]
+    },
+    {
+        "id": 7,
+        "name": "BUKET J",
+        "urlImg": "image_3.jpg",
+        "price": 1258,
+        "inc": ["роза", "хризантема", "гербера"]
+    },
+    {
+        "id": 8,
+        "name": "BUKET G",
+        "urlImg": "image_3.jpg",
+        "price": 2225,
+        "inc": ["тюльпан"]
+    },
+    {
+        "id": 9,
+        "name": "BUKET H",
+        "urlImg": "image_3.jpg",
+        "price": 3850,
+        "inc": ["гвоздика", "тюльпан"]
+    },
+    {
+        "id": 10,
+        "name": "BUKET K",
+        "urlImg": "image_3.jpg",
+        "price": 1890,
+        "inc": ["роза", "тюльпан"]
+    },
+    {
+        "id": 11,
+        "name": "BUKET L",
+        "urlImg": "image_3.jpg",
+        "price": 6330,
+        "inc": ["роза", "гербера", "пион"]
     }
 ]

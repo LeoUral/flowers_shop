@@ -1,22 +1,36 @@
+import { observer } from 'mobx-react';
 import React from 'react';
+import BascketStore from '../store/bascket';
 
-export default class FormCustomer extends React.Component {
+//! отправка ФОРМЫ отключена preventDefault
 
-    render() {
-        return (
-            <>
-                <form>
+const FormCustomer = observer(() => {
+
+    const show = BascketStore.show;
+    console.log(show + ' <- state SHOW in FORM component'); // test -> show for FORM
+
+    return (
+        <>
+            <form className="form" style={{ display: show ? 'block' : 'none' }}>
+                <div className="form__shadow"></div>
+                <div className="form__window">
+                    <h4>Для уточнения данных по заказу, оставте Ваш телефон.</h4>
                     <label>
-                        You Name
-                    <input type="text" placeholder="you name" />
+                        Your Name
+                <input type="text" placeholder="your name" className="form__input" />
                     </label>
                     <label>
                         You Phone
-                    <input type="phone" />
+                <input type="tel" className="form__input" />
                     </label>
-                    <input type="submit" placeholder=" send " />
-                </form>
-            </>
-        );
-    }
-}
+                    <input type="submit" className="form__btn_submit" onClick={(e) => {
+                        e.preventDefault();
+                        BascketStore.changeShow();
+                    }} />
+                </div>
+            </form>
+        </>
+    );
+})
+
+export default FormCustomer;

@@ -11,6 +11,69 @@
     justify-content: center;
 }
 
+.form {
+    width: 100%;
+    position: fixed;
+    z-index: 9;
+    & h4 {
+        text-align: center;
+    }
+    & label {
+        text-transform: uppercase;
+    }
+    &__shadow {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: 0.5;
+        position: fixed;
+        z-index: 10;
+    }
+    &__window {
+        position: relative;
+        z-index: 11;
+        width: 300px;
+        margin: 100px auto 0 auto;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        border: 1px solid #000;
+        background-color: #fff;
+        box-sizing: border-box;
+        justify-content: space-around;
+    }
+    &__input {
+        width: 143px;
+        height: 30px;
+        margin: 10px 0 10px 10px;
+        padding: 0 5px;
+        text-transform: uppercase;
+        background-color: rgb(207, 244, 253);
+    }
+    &__btn_submit {
+        width: 170px;
+        height: 40px;
+        border: none;
+        outline: none;
+        box-sizing: border-box;
+        margin: 10px auto;
+        background-color: red;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    &__btn_submit:hover {
+        box-shadow: 3px 3px 5px #000;
+        transition: 0.5s;
+    }
+}
+
 .blockItem {
     width: 150px;
     height: 200px;

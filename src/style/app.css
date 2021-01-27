@@ -16,6 +16,87 @@
           justify-content: center;
 }
 
+.form {
+  width: 100%;
+  position: fixed;
+  z-index: 9;
+}
+
+.form h4 {
+  text-align: center;
+}
+
+.form label {
+  text-transform: uppercase;
+}
+
+.form__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  z-index: 10;
+}
+
+.form__window {
+  position: relative;
+  z-index: 11;
+  width: 300px;
+  margin: 100px auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+  border: 1px solid #000;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form__input {
+  width: 143px;
+  height: 30px;
+  margin: 10px 0 10px 10px;
+  padding: 0 5px;
+  text-transform: uppercase;
+  background-color: #cff4fd;
+}
+
+.form__btn_submit {
+  width: 170px;
+  height: 40px;
+  border: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px auto;
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.form__btn_submit:hover {
+  -webkit-box-shadow: 3px 3px 5px #000;
+          box-shadow: 3px 3px 5px #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .blockItem {
   width: 150px;
   height: 200px;

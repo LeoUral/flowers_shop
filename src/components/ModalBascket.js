@@ -14,6 +14,7 @@ class ModalBascket extends React.Component {
 
         this.handleOpenModalWindow = this.handleOpenModalWindow.bind(this);
         this.handleCloseModalWindow = this.handleCloseModalWindow.bind(this);
+        this.handleToPay = this.handleToPay.bind(this);
     }
 
     handleOpenModalWindow() {
@@ -22,6 +23,12 @@ class ModalBascket extends React.Component {
 
     handleCloseModalWindow() {
         this.setState({ show: false });
+    }
+
+    handleToPay() {
+        this.handleCloseModalWindow();
+        BascketStore.changeShow();
+        console.log(BascketStore.show + ' change SHOW');//test -> chanfe show for start FORM
     }
 
     componentDidMount() {
@@ -44,7 +51,7 @@ class ModalBascket extends React.Component {
                         <ViewBacket />
                         <div className="btn-block">
                             <button className="btn-close" onClick={this.handleCloseModalWindow}>Close</button>
-                            <button className="btn-pay">To pay</button>
+                            <button className="btn-pay" onClick={this.handleToPay}>To pay</button>
                         </div>
                     </div>
                 </div>
