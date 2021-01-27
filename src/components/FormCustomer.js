@@ -23,10 +23,11 @@ const FormCustomer = observer(() => {
                         You Phone
                 <input type="tel" className="form__input" />
                     </label>
-                    <input type="submit" className="form__btn_submit" onClick={(e) => {
-                        e.preventDefault();
-                        BascketStore.changeShow();
-                    }} />
+                    <input type="submit" className="form__btn_submit"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            BascketStore.changeShow();
+                        }} />
                 </div>
             </form>
         </>
