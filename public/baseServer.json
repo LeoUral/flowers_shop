@@ -3,83 +3,83 @@
         "name": "BUKET A",
         "urlImg": "flowers_0.png",
         "price": 1550,
-        "inc": ["роза", "тюльпан"]
+        "inc": "роза, тюльпан"
     },
     {
         "id": 1,
         "name": "BUKET B",
         "urlImg": "flowers_1.jpg",
         "price": 2300,
-        "inc": ["роза", "хризантема", "гербера"]
+        "inc": "роза, хризантема, гербера"
     },
     {
         "id": 2,
         "name": "BUKET C",
         "urlImg": "flowers_2.png",
         "price": 1220,
-        "inc": ["тюльпан"]
+        "inc": "тюльпан"
     },
     {
         "id": 3,
         "name": "BUKET D",
         "urlImg": "flowers_3.jpg",
         "price": 850,
-        "inc": ["гвоздика", "тюльпан"]
+        "inc": "гвоздика, тюльпан"
     },
     {
         "id": 4,
         "name": "BUKET E",
         "urlImg": "flowers_4.jpg",
         "price": 1750,
-        "inc": ["роза", "тюльпан"]
+        "inc": "роза, тюльпан"
     },
     {
         "id": 5,
         "name": "BUKET F",
         "urlImg": "flowers_5.jpg",
         "price": 5200,
-        "inc": ["роза", "гербера", "пион"]
+        "inc": "роза, гербера, пион"
     },
     {
         "id": 6,
         "name": "BUKET I",
         "urlImg": "flowers_6.jpg",
         "price": 1456,
-        "inc": ["роза", "тюльпан"]
+        "inc": "роза, тюльпан"
     },
     {
         "id": 7,
         "name": "BUKET J",
         "urlImg": "flowers_7.jpg",
         "price": 1258,
-        "inc": ["роза", "хризантема", "гербера"]
+        "inc": "роза, хризантема, гербера"
     },
     {
         "id": 8,
         "name": "BUKET G",
         "urlImg": "flowers_8.jpg",
         "price": 2225,
-        "inc": ["тюльпан"]
+        "inc": "тюльпан"
     },
     {
         "id": 9,
         "name": "BUKET H",
         "urlImg": "flowers_9.jpg",
         "price": 3850,
-        "inc": ["гвоздика", "тюльпан"]
+        "inc": "гвоздика, тюльпан"
     },
     {
         "id": 10,
         "name": "BUKET K",
         "urlImg": "flowers_10.jpg",
         "price": 1890,
-        "inc": ["роза", "тюльпан"]
+        "inc": "роза, тюльпан"
     },
     {
         "id": 11,
         "name": "BUKET L",
         "urlImg": "flowers_11.jpg",
         "price": 6330,
-        "inc": ["роза", "гербера", "пион"]
+        "inc": "роза, гербера, пион"
     }
 ]

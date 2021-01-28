@@ -1,5 +1,6 @@
 
 import React from 'react';
+import HeaderSearch from './HeaderSearch';
 import HeaderTotal from './headerTotal';
 
 
@@ -10,7 +11,7 @@ class Header extends React.Component {
         return (
             <>
                 <div className="header">
-                    Header block
+                    <HeaderSearch />
                     <HeaderTotal />
                 </div>
             </>

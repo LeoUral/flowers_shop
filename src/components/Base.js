@@ -1,3 +1,4 @@
+import BascketStorage from '../store/bascket';
 
 class Base {
 
@@ -14,7 +15,8 @@ class Base {
             console.log(this.dataBase); // база букетов //test -> base
             console.log(this.response.status + ' <= STATUS SERVER');//test -> status
 
-            return this.dataBase;
+            BascketStorage.writeBase(this.dataBase);
+            // return this.dataBase;
 
         } else {
             console.log('ERROR => ' + this.response.status);//test -> status.err

@@ -2,14 +2,14 @@ import { makeAutoObservable } from "mobx";
 
 class BascketStore {
 
-    lengthArray = 12; //длинна массива БАЗЫ
-    quantity = new Array(this.lengthArray); // массив купленных букетов, количество по ID    
     total = 0; //итоговая стоимость покупок
     base = []; //база букетов
     show = false;
+    composition = ''; // состав букета
 
     constructor() {
         makeAutoObservable(this);
+        this.quantity = this.base.map(item => 0);// пустой массив покупок
     }
 
     incrementTotal(numberData) {
@@ -22,9 +22,14 @@ class BascketStore {
 
     writeBase(data) {
         this.base = data;
+        console.log(this.base + '<<< GET BASE in STORAGE');
     }
     changeShow() {
         this.show = !this.show;
+    }
+    changeComposition(flower) {
+        this.composition = flower;
+        console.log(this.composition + ' <<< FLOWER');//test flower includes
     }
 
     //Заносим в массив количество покупок
