@@ -3,7 +3,7 @@ import { makeAutoObservable } from "mobx";
 class BascketStore {
 
     lengthArray = 12; //длинна массива БАЗЫ
-    quantity = new Array(this.lengthArray); // массив купленных букетов, количество по ID
+    quantity = new Array(this.lengthArray); // массив купленных букетов, количество по ID    
     total = 0; //итоговая стоимость покупок
     base = []; //база букетов
     show = false;

@@ -1,0 +1,24 @@
+@keyframes move {
+    from {
+        margin: -100px auto;
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    to {
+        margin: 100px auto 0 auto;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}

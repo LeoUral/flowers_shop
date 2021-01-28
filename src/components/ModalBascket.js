@@ -11,7 +11,6 @@ class ModalBascket extends React.Component {
             show: false,
             base: []// наполнение покупками
         };
-
         this.handleOpenModalWindow = this.handleOpenModalWindow.bind(this);
         this.handleCloseModalWindow = this.handleCloseModalWindow.bind(this);
         this.handleToPay = this.handleToPay.bind(this);
