@@ -22,3 +22,63 @@
         transform: scale(1);
     }
 }
+
+@keyframes move3 {
+    from {
+        left: 0%;
+        top: 0%;
+        animation-timing-function: ease-in;
+    }
+    25% {
+        left: 50%;
+        top: 25%;
+        transform: rotate(360deg);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        left: 97%;
+        top: 0%;
+        transform: rotate(720deg);
+        animation-timing-function: ease-in;
+    }
+    75% {
+        left: 50%;
+        top: 50%;
+        transform: rotate(360deg);
+        animation-timing-function: ease-out;
+    }
+    to {
+        left: 0%;
+        top: 0%;
+    }
+}
+
+@keyframes move4 {
+    from {
+        left: 0%;
+        top: 50%;
+        animation-timing-function: ease-in;
+    }
+    25% {
+        left: 50%;
+        top: 15%;
+        transform: rotate(360deg);
+        animation-timing-function: ease-out;
+    }
+    50% {
+        left: 97%;
+        top: 25%;
+        transform: rotate(720deg);
+        animation-timing-function: ease-in;
+    }
+    75% {
+        left: 50%;
+        top: 5%;
+        transform: rotate(360deg);
+        animation-timing-function: ease-out;
+    }
+    to {
+        left: 0%;
+        top: 50%;
+    }
+}
