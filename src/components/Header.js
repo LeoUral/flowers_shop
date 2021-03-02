@@ -32,12 +32,12 @@ class Header extends React.Component {
         return (
             <>
                 <div className="header">
-                    <div className="animation_block" >
+                    {/* <div className="animation_block" >
                         <img src={image_1} alt="pic" />
                     </div>
                     <div className="animation_block2 invisible_block" >
                         <img src={image_2} alt="pic" />
-                    </div>
+                    </div> */}
                     <HeaderSearch />
                     <HeaderTotal />
                 </div>
