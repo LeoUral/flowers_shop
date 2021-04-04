@@ -3,6 +3,62 @@
     width: 100%;
 }
 
+.container-right {
+    width: 30%;
+    background-color: #E4E7F0;
+    margin-bottom: 2rem;
+    border-radius: none;
+}
+
+.container-left {
+    width: 70%;
+}
+
+.container-flex {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.view-navbar {
+    width: 100%;
+    &__link {
+        margin: 0 5% 0 5%;
+    }
+    &__link-link {
+        margin: 0 5% 0 15%;
+        text-transform: uppercase;
+        color: rgb(74, 87, 161);
+    }
+}
+
+.btn_view {
+    width: 200px;
+    height: 35px;
+    font-size: 18px;
+    background-color: #E77E50;
+    margin: 20px 20px 20px 0;
+    border: none;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.view-main {
+    color: #35598E;
+    border-radius: none;
+    &__h1 {
+        text-transform: uppercase;
+    }
+}
+
+.view-image {
+    width: 90%;
+}
+
+
+/***********  eshop  ***********/
+
 .header {
     width: 100%;
     height: 100px;

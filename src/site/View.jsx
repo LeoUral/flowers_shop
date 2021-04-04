@@ -1,5 +1,5 @@
 import React from 'react';
-import HeaderView from './HeaderView';
+import ViewHeader from './ViewHeader';
 
 //основной класс для сайта
 export default class View extends React.Component {
@@ -7,7 +7,10 @@ export default class View extends React.Component {
     render() {
         return (
             <>
-                <HeaderView />
+                <ViewHeader />
+                <div>
+                    ОСНОВНОЙ САЙТ
+                </div>
             </>
         )
     }
