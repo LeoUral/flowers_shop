@@ -1,4 +1,5 @@
 @import './animation';
+@import './font';
 .container {
     width: 100%;
 }
@@ -24,6 +25,7 @@
     width: 100%;
     &__link {
         margin: 0 5% 0 5%;
+        font-family: 'Raleway';
     }
     &__link-link {
         margin: 0 5% 0 15%;
@@ -35,6 +37,7 @@
 .btn_view {
     width: 200px;
     height: 35px;
+    font-family: 'Raleway';
     font-size: 18px;
     background-color: #E77E50;
     margin: 20px 20px 20px 0;
@@ -47,8 +50,13 @@
 .view-main {
     color: #35598E;
     border-radius: none;
+    font-family: 'Raleway';
     &__h1 {
         text-transform: uppercase;
+        font-weight: 700;
+    }
+    p {
+        font-weight: 300;
     }
 }
 
