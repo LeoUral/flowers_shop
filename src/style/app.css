@@ -262,6 +262,7 @@
 }
 
 .container-flex {
+  margin-bottom: -32px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,6 +300,15 @@
   outline: none;
   color: #fff;
   text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.btn_view:hover {
+  -webkit-box-shadow: 3px 3px 5px #555;
+          box-shadow: 3px 3px 5px #555;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .view-main {
@@ -318,6 +328,40 @@
 
 .view-image {
   width: 90%;
+}
+
+.view_main_image {
+  width: 100%;
+}
+
+.view_main_image_link {
+  margin: 20px 0 0 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.view_main_image_btn {
+  width: 80%;
+  margin: 20px 10%;
+  padding: 3px 0;
+  text-transform: uppercase;
+  background-color: inherit;
+  border: 1px solid #E77E4F;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.view_main_image_btn:hover {
+  background-color: #E77E4F;
+  -webkit-box-shadow: 3px 3px 5px #555;
+          box-shadow: 3px 3px 5px #555;
+  color: #fff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /***********  eshop  ***********/
