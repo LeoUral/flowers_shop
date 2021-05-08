@@ -62,7 +62,6 @@ export default class ViewAbout extends React.Component {
                                     textPrice="2500 руб."
                                     textBtn="Заказать букет"
                                 />
-
                             </Row>
                         </Container>
                     </Jumbotron>
